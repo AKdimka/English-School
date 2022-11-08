@@ -5,17 +5,23 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Grigo Academy</title>
+	<link rel="icon" href="/img/fav_2.svg" sizes="32x32" type="image/svg">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="/>
 </head>
 
-<body>
-	<header>
-		<nav>
-			<a href="">
-				<svg>
-				<use></use>
-			</svg>
-		</a>
-			<ul>
+<body style="font-family: Rubik">
+	<header class="header">
+		<nav class="header__nav">
+			<a class="header__logo"
+			href="">
+				<svg width="302" height="139">
+					<use href="/img/header_logo.svg"></use>
+				</svg>
+			</a>
+			<ul class="nav__list">
 				<li>
 					<a href="#">Home</a>
 				</li>
@@ -38,29 +44,29 @@
 		</nav>
 	</header>
 
-	<main>
-	<section>
+	<main style="background-color: tomato">
+	<section class="section">
 		<div>
-			<h1>Lorem ipsum dolor sit amet, consectetur</h1>
-			<P>Consectetur adipiscing elit integer bibendum</P>
+			<h1 class="hero__title">Lorem ipsum dolor sit amet, consectetur</h1>
+			<p>Consectetur adipiscing elit integer bibendum</p>
 		</div>
 		<form action="">
-			<h2>Записаться</h2>
+			<h2 class="section__title">Записаться</h2>
 			<label>
 				Email or phone number
-				<input type="text">
+				<input type="email" name="email">
 			</label>
 			<label>
 				Password
-				<input type="text" name="">
+				<input type="password" name="password">
 			</label>
 			<button type="submit">Записаться на бесплатный пробный урок</button>
 			<a href="#">Forgot your password?</a>
 		</form>
 	</section>
 
-	<section>
-		<h2>О нас</h2>
+	<section class="section">
+		<h2 class="section__title">О нас</h2>
 		<div>
 			<h3>Letraset sheets </h3>
 			<p>Letraset sheets containing Lorem Ipsum passages</p>
@@ -70,72 +76,73 @@
 			<p>Letraset sheets containing Lorem Ipsum passages</p>
 			<p>Recently with desktop publishing software like Aldus PageMaker including versions </p>
 		</div>
-		<img src="" alt="" width="870" height="580">
+		<img src="/img/about.jpg" alt="" width="290" height="193">
 	</section>
 
-	<section>
-		<h2>Наши учителя</h2>
-		<ul>
-			<li>
-				<img src="" alt="">
-				<h3>Denis Dechart</h3>
-				<p>Опыт преподавания: <span>10</span>лет</p>
-				<p>Возраст: <span>32</span></p>
-				<ul>
+	<section class="section">
+		<h2 class="section__title">Наши учителя</h2>
+		<ul class="teachers">
+			<li class="teacher">
+				<img class="teacher__photo" src="/img/teacher_1.jpg" alt="teacher__photo" width="174" height="174">
+				<h3 class="teacher__name">Denis Dechart</h3>
+				<p class="teacher__experiens">Опыт преподавания: <span>10</span>лет</p>
+				<p class="teacher__age">Возраст: <span>32</span></p>
+				<ul class="teacher__socials">
 					<li>
 						<a>
-						<svg>
-							<use></use>
+						<svg width="24" height="24">
+							<use href="/img/instagram.svg"></use>
 						</svg>
 					</a>
 				</li>
 				<li>
 					<a>
-					<svg>
-						<use></use>
+					<svg width="24" height="24">
+						<use href="/img/instagram.svg"></use>
 					</svg>
 				</a>
 			</li>
 				</ul>
 			</li>
-			<li><img src="" alt="">
-				<h3>Alis Dechart</h3>
-				<p>Опыт преподавания: <span>11</span>лет</p>
-				<p>Возраст: <span>32</span></p>
-				<ul>
+			<li class="teacher">
+				<img class="teacher__photo" src="/img/teacher_2.jpg" alt="teacher__photo" width="174" height="174">
+				<h3 class="teacher__name">Alis Dechart</h3>
+				<p class="teacher__experiens">Опыт преподавания: <span>11</span>лет</p>
+				<p class="teacher__age">Возраст: <span>32</span></p>
+				<ul class="teacher__socials">
 					<li>
 						<a>
-						<svg>
-							<use></use>
+						<svg width="24" height="24">
+							<use href="/img/instagram.svg"></use>
 						</svg>
 					</a>
 				</li>
 				<li>
 					<a>
-					<svg>
-						<use></use>
+					<svg width="24" height="24">
+						<use href="/img/instagram.svg"></use>
 					</svg>
 				</a>
 			</li>
 				</ul>
 			</li>
-			<li>
-				<img src="" alt="">
-				<h3>Elis Dechart</h3>
-				<p>Опыт преподавания: <span>5</span>лет</p>
-				<p>Возраст: <span>32</span></p>
-				<ul>
+			<li class="teacher">
+				<img class="teacher__photo" src="/img/teacher_3.jpg" alt="teacher__photo" width="174" height="174">
+				<h3 class="teacher__name">Elis Dechart</h3>
+				<p class="teacher__experiens">Опыт преподавания: <span>5</span>лет</p>
+				<p class="teacher__age">Возраст: <span>32</span></p>
+				<ul class="teacher__socials">
 					<li>
 						<a>
-						<svg>
-							<use></use>
+						<svg width="24" height="24">
+							<use href="/img/instagram.svg"></use>
 						</svg>
 					</a>
 				</li>
 				<li>
 					<a>
-					<svg>
-						<use></use>
+					<svg width="24" height="24">
+						<use href="/img/instagram.svg"></use>
 					</svg>
 				</a>
 			</li>
@@ -144,30 +151,34 @@
 		</ul>
 	</section>
 
-	<section>
-		<h2>Цены на обучение</h2>
-		<ul>
-			<li>
-				<img src="" alt="">
-				<h3>Английский для подростков (9-12 классов)</h3>
+	<section class="section">
+		<h2 class="section__title">Цены на обучение</h2>
+		<ul class="prices-list">
+			<li class="price">
+				<img src="/img/price_1.jpg" alt="">
+				<h3 class="price__title">Английский для подростков (9-12 классов)</h3>
+				<ul>
+					<li>Количество студентов: 6</li>
+					<li>Минут: 60</li>
+					<li>Уроков в неделю: 2</li>
+				</ul>
+				<ul class="">
+					<li></li>
+					<li></li>
+				</ul>
+			</li>
+			<li class="price">
+				<img src="/img/price_2.jpg" alt="">
+				<h3 class="price__title">Профессиональный английский</h3>
 				<ul>
 					<li>Количество студентов: 6</li>
 					<li>Минут: 60</li>
 					<li>Уроков в неделю: 2</li>
 				</ul>
 			</li>
-			<li>
-				<img src="" alt="">
-				<h3>Профессиональный английский</h3>
-				<ul>
-					<li>Количество студентов: 6</li>
-					<li>Минут: 60</li>
-					<li>Уроков в неделю: 2</li>
-				</ul>
-			</li>
-			<li>
-				<img src="" alt="">
-				<h3>Английский для детей (1-8 классов)</h3>
+			<li class="price">
+				<img src="/img/price_3.jpg" alt="">
+				<h3 class="price__title">Английский для детей (1-8 классов)</h3>
 				<ul>
 					<li>Количество студентов: 6</li>
 					<li>Минут: 60</li>
@@ -177,23 +188,31 @@
 		</ul>
 	</section>
 
-	<section>
-		<h2>Отзывы</h2>
+	<section class="section">
+		<h2 class="section__title">Отзывы</h2>
 
 	</section>
 
-	<section>
-		<h2>Часто задаваемые вопросы</h2>
-		<ul>
-			<li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
-			<li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
-			<li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
-			<li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+	<section class="section">
+		<h2 class="section__title">Часто задаваемые вопросы</h2>
+		<ul class="questions">
+			<li class="questions__el">
+				<p class="questions__text">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+			</li>
+			<li class="questions__el">
+				<p class="questions__text">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+			</li>
+			<li class="questions__el">
+				<p class="questions__text">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+			</li>
+			<li class="questions__el">
+				<p class="questions__text">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+			</li>
 		</ul>
 	</section>
 
-	<section>
-		<h2>Блог</h2>
+	<section class="section">
+		<h2 class="section__title">Блог</h2>
 		<ul>
 			<li>
 				<img src="" alt="">
@@ -217,12 +236,12 @@
 	</section>
 	</main>
 	
-	<footer>
-		<svg>
+	<footer class="footer">
+		<svg class="footer__logo">
 			<use></use>
 		</svg>
 
-		<div class="footer-right">
+		<div class="footer__right">
 			<nav>
 				<ul>
 					<li>
@@ -245,6 +264,7 @@
 					</li>
 			</ul>
 		</nav>
+
 		<div>
 			<ul class="contacts">
 				<li>
