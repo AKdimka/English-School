@@ -47,7 +47,7 @@ main{
 		padding-right: 15px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px, max-width: 1920px) {
   .container {
     max-width: 768px;
 		padding-left: 25px;
@@ -385,6 +385,98 @@ main{
 }
 .questions__text {
 }
+
+.posts {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  gap: 30px;
+}
+@media screen and (min-width: 1920px) {
+	.posts {
+		gap: 144px;
+	}
+}
+.post {
+	width: 290px;
+	box-shadow: 9px 4px 23px rgba(0, 0, 0, 0.04);
+	border-radius: 15px;
+	background: #FFFFFF;
+}
+@media screen and (min-width: 768px) {
+	.post {
+		width: 340px;
+	}
+}
+@media screen and (min-width: 1920px) {
+	.post {
+		width: 437px;
+	}
+}
+.post__text{
+	padding: 10px 15px 20px;
+}
+@media screen and (min-width: 768px) {
+	.post__text {
+		padding: 15px 20px 30px;
+	}
+}
+@media screen and (min-width: 1920px) {
+	.post__text {
+		padding: 25px 35px 50px;
+	}
+}
+.post__info {
+	display: flex;
+	justify-content: space-between;
+	font-size: 10px;
+	line-height: 1.25;
+}
+@media screen and (min-width: 768px) {
+	.post__info {
+		font-size: 15px;
+	}
+}
+@media screen and (min-width: 1920px) {
+	.post__info {
+		font-size: 20px;
+	}
+}
+.post__title {
+	font-size: 18px;
+	line-height: 1.25;
+	margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+	.post__title {
+		font-size: 26px;
+		margin-top: 15px;
+	}
+}
+@media screen and (min-width: 1920px) {
+	.post__title {
+		font-size: 36px;
+		margin-top: 20px;
+	}
+}
+.post__body {
+	font-size: 12px;
+	line-height: 1.25;
+	margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+	.post__body {
+		font-size: 16px;
+		margin-top: 15px;
+	}
+}
+@media screen and (min-width: 1920px) {
+	.post__body {
+		font-size: 24px;
+		margin-top: 20px;
+	}
+}
+
 .footer {
 }
 .footer__logo {
