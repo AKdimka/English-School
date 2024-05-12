@@ -20,216 +20,319 @@
 </head>
 
 <body>
-	<header>
-		<ul>
-			<li>Home</li>
-			<li>Price</li>
-			<li>Blog</li>
-			<li>Questions</li>
-			<li>Reviews</li>
-		</ul>
-		<button>Записаться на урок</button>
+	<header class="header">
+		<!-- 	<nav class="header__nav">
+			<a class="header__logo" href="">
+				<svg>
+					<use href="img/header_logo.svg"></use>
+				</svg>
+			</a>
+			<ul class="nav__list">
+				<li>
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="/prices.html">Price</a>
+				</li>
+				<li>
+					<a href="/blog.html">Blog</a>
+				</li>
+				<li>
+					<a href="#">Question</a>
+				</li>
+				<li>
+					<a href="/reviews.html">Reviews</a>
+				</li>
+				<li>
+					<a href="#">Записаться на урок</a>
+				</li>
+			</ul>
+		</nav> -->
 	</header>
 
 	<main>
-		<div>
-			<h1>Lorem ipsum dolor sit amet, consectetur </h1>
-			<p>Consectetur adipiscing elit integer bibendum </p>
-
-			<form action="submit">
-				<label for="username">Email or phone number</label>
-				<input type="text" id="username">
-				<label for="userpasswod">Password</label>
-				<input type="text" id="userpasswod">
-				<button>Записаться на бесплатный пробный урок</button>
-				<p>Forgot your password?</p>
-			</form>
-		</div>
-
-		<div class="container about">
-			<h2 class="title">О нас</h2>
-			<div class="about__let">
-				<div>
-					<h3>Letraset sheets </h3>
-					<p class="about__text">Letraset sheets containing Lorem Ipsum passages</p>
-					<p class="about__text">Recently with desktop publishing software like Aldus PageMaker including versions </p>
-					<p class="about__text">Recently with desktop publishing software like Aldus PageMaker including versions </p>
-				</div>
-
-				<div>
-					<div>
-						<h3>Letraset sheets </h3>
-						<p class="about__text">Letraset sheets containing Lorem Ipsum passages</p>
-						<p class="about__text">Recently with desktop publishing software like Aldus PageMaker including versions
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="about__right">
-				<img class="about__img" src="" alt="Дети выполняют здание по английскому">
-			</div>
-		</div>
-
-		<div class="teachers">
-			<h2 class="title">Наши учителя</h2>
-			<ul class="teachers__list">
-				<li class="teachers__item">
-					<div class="teachers__thumb">
-						<img src="" alt="">
-					</div>
-					<h3 class="teachers__name">Name</h3>
-					<p class="teachers__exp"><span>Опыт преподавания:</span><span> 10 лет</span></p>
-					<p class="teachers__age"><span>Возраст:</span><span> 32</span></p>
-					<ul class="teachers__links">
-						<li class="teachers__link">inst</li>
-						<li class="teachers__link">FB</li>
-					</ul>
-				</li>
-				<li>
-					<div>
-						<img src="" alt="">
-					</div>
-					<h3>Name</h3>
-					<p><span>Опыт преподавания:</span><span> 10 лет</span></p>
-					<p><span>Возраст:</span><span> 32</span></p>
-					<ul>
-						<li>inst</li>
-						<li>FB</li>
-					</ul>
-				</li>
-				<li>
-					<div>
-						<img src="" alt="">
-					</div>
-					<h3>Name</h3>
-					<p><span>Опыт преподавания:</span><span> 10 лет</span></p>
-					<p><span>Возраст:</span><span> 32</span></p>
-					<ul>
-						<li>inst</li>
-						<li>FB</li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-
-		<div class="container prices">
-			<h2 class="title">Цены на обучение</h2>
-			<ul class="prices__list">
-				<li class="prices__item">
-					<div class="prices__thumb">
-						<img src="" alt="">
-					</div>
-					<h3 class="prces__title">Английский для подростков (9-12 классов)</h3>
-					<ul class="prices__info-list">
-						<li class="prices__info-item">Количество студентов: 6</li>
-						<li class="prices__info-item">Минут: 60</li>
-						<li class="prices__info-item">Уроков в неделю: 2</li>
-					</ul>
-					<button class="prices__price">8 300 грн/мес</button>
-				</li>
-				<li>
-					<div>
-						<img src="" alt="">
-					</div>
-					<h3>Английский для подростков (9-12 классов)</h3>
-					<ul>
-						<li>Количество студентов: 6</li>
-						<li>Минут: 60</li>
-						<li>Уроков в неделю: 2</li>
-					</ul>
-					<button>8 300 грн/мес</button>
-				</li>
-				<li>
-					<div>
-						<img src="" alt="">
-					</div>
-					<h3>Английский для подростков (9-12 классов)</h3>
-					<ul>
-						<li>Количество студентов: 6</li>
-						<li>Минут: 60</li>
-						<li>Уроков в неделю: 2</li>
-					</ul>
-					<button>8 300 грн/мес</button>
-				</li>
-			</ul>
-		</div>
-
-		<div class="container reviews">
-			<h2 class="title">Отзывы</h2>
+		<!-- 	<section class="section">
 			<div>
-				<ul class="reviews__list">
-					<li class="reviews__user">
-						<img src="" alt="">
-						<h3 class="reviews__user-name">Name</h3>
-						<h4 class="reviews__user-status">Status</h4>
-						<p class="reviews__user-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu semper
-							justo. Etiam venenatis cursus
-							vulputate. Duis sollicitudin aliquam metus, vel ullamcorper arcu vulputateLorem ipsum dolor sit amet,
-							consectetur elit.
-						</p>
+				<h1 class="hero__title">Lorem ipsum dolor sit amet, consectetur</h1>
+				<p>Consectetur adipiscing elit integer bibendum</p>
+			</div>
+			<form action="">
+				<h2 class="section__title">Записаться</h2>
+				<label>
+					Email or phone number
+					<input type="email" name="email">
+				</label>
+				<label>
+					Password
+					<input type="password" name="password">
+				</label>
+				<button type="submit">Записаться на бесплатный пробный урок</button>
+				<a href="#">Forgot your password?</a>
+			</form>
+		</section> -->
+
+		<section class="section">
+			<div class="container">
+				<h2 class="section__title">О нас</h2>
+				<div class="about">
+					<div class="about__left">
+						<div class="about__paragraph">
+							<h3 class="about__title">Letraset sheets </h3>
+							<p class="about__text">Letraset sheets containing Lorem Ipsum passages</p>
+							<p class="about__text">Recently with desktop publishing software like Aldus PageMaker including versions
+							</p>
+							<p class="about__text">Recently with desktop publishing software like Aldus PageMaker including versions
+							</p>
+						</div>
+						<div class="about__paragraph">
+							<h3 class="about__title">Letraset sheets </h3>
+							<p class="about__text">Letraset sheets containing Lorem Ipsum passages</p>
+							<p class="about__text">Recently with desktop publishing software like Aldus PageMaker including versions
+							</p>
+						</div>
+					</div>
+					<div class="about__right"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="container">
+				<h2 class="section__title">Наши учителя</h2>
+				<ul class="teachers">
+					<li class="teacher">
+						<img class="teacher__photo" src="img/teacher_1.jpg" alt="teacher__photo" width="174" height="174"
+							loading="lazy">
+						<div class="teacher__text">
+							<h3 class="teacher__name">Denis Dechart</h3>
+							<p class="teacher__experiens">Опыт преподавания: <span>10</span>лет</p>
+							<p class="teacher__age">Возраст: <span>32</span></p>
+							<ul class="teacher__socials">
+								<li>
+									<a>
+										<svg width="24" height="24">
+											<use href="img/instagram.svg"></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a>
+										<svg width="24" height="24">
+											<use href="img/instagram.svg"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
 					</li>
-					<li>
-						<img src="" alt="">
-						<h3>Name</h3>
-						<h4>Status</h4>
-						<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu semper justo. Etiam venenatis cursus
-							vulputate. Duis sollicitudin aliquam metus, vel ullamcorper arcu vulputateLorem ipsum dolor sit amet,
-							consectetur elit.
-						</p>
+					<li class="teacher">
+						<img class="teacher__photo" src="img/teacher_2.jpg" alt="teacher__photo" width="174" height="174"
+							loading="lazy">
+						<div class="teacher__text">
+							<h3 class="teacher__name">Alis Dechart</h3>
+							<p class="teacher__experiens">Опыт преподавания: <span>11</span>лет</p>
+							<p class="teacher__age">Возраст: <span>32</span></p>
+							<ul class="teacher__socials">
+								<li>
+									<a>
+										<svg width="24" height="24">
+											<use href="img/instagram.svg"></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a>
+										<svg width="24" height="24">
+											<use href="img/instagram.svg"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
 					</li>
-					<li>
-						<img src="" alt="">
-						<h3>Name</h3>
-						<h4>Status</h4>
-						<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu semper justo. Etiam venenatis cursus
-							vulputate. Duis sollicitudin aliquam metus, vel ullamcorper arcu vulputateLorem ipsum dolor sit amet,
-							consectetur elit.
-						</p>
+					<li class="teacher">
+						<img class="teacher__photo" src="img/teacher_3.jpg" alt="teacher__photo" width="174" height="174"
+							loading="lazy">
+						<div class="teacher__text">
+							<h3 class="teacher__name">Elis Dechart</h3>
+							<p class="teacher__experiens">Опыт преподавания: <span>5</span>лет</p>
+							<p class="teacher__age">Возраст: <span>32</span></p>
+							<ul class="teacher__socials">
+								<li>
+									<a>
+										<svg width="24" height="24">
+											<use href="img/instagram.svg"></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a>
+										<svg width="24" height="24">
+											<use href="img/instagram.svg"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
 					</li>
 				</ul>
 			</div>
-		</div>
+		</section>
 
-		<div class="container questions">
-			<h2 class="title">Часто задаваемые вопросы</h2>
-			<ul class="questions__list">
-				<li class="questions__item">Lorem ipsum dolor sit amet, consectetur adipiscing</li>
-				<li class="questions__item">Lorem ipsum dolor sit amet, consectetur adipiscing</li>
-				<li class="questions__item">Lorem ipsum dolor sit amet, consectetur adipiscing</li>
-				<li class="questions__item">Lorem ipsum dolor sit amet, consectetur adipiscing</li>
-			</ul>
-		</div>
+		<section class="section">
+			<div class="container">
+				<h2 class="section__title">Цены на обучение</h2>
+				<ul class="prices-list">
+					<li class="price">
+						<img class="price__img" src="img/price_1.jpg" alt="" loading="lazy">
+						<div class="price__text-wrapper">
+							<h3 class="price__title">Английский для <br>подростков (9-12 классов)</h3>
+							<ul class="price__info">
+								<li>Количество студентов: 6</li>
+								<li>Минут: 90</li>
+								<li>Уроков в неделю: 3</li>
+							</ul>
+							<div class="price__btn-wrapper">
+								<button class="price__btn">4200 грн/мес</button>
+							</div>
+						</div>
+					</li>
+					<li class="price">
+						<img class="price__img" src="img/price_2.jpg" alt="" loading="lazy">
+						<div class="price__text-wrapper">
+							<h3 class="price__title">Профессиональный английский</h3>
+							<ul class="price__info">
+								<li>Количество студентов: 6</li>
+								<li>Минут: 60</li>
+								<li>Уроков в неделю: 2</li>
+							</ul>
+							<div class="price__btn-wrapper">
+								<button class="price__btn">1500 грн/мес</button>
+							</div>
+						</div>
+					</li>
+					<li class="price">
+						<img class="price__img" src="img/price_3.jpg" alt="" loading="lazy">
+						<div class="price__text-wrapper">
+							<h3 class="price__title">Английский для <br> детей (1-8 классов)</h3>
+							<ul class="price__info">
+								<li>Количество студентов: 6</li>
+								<li>Минут: 70</li>
+								<li>Уроков в неделю: 3</li>
+							</ul>
+							<div class="price__btn-wrapper">
+								<button class="price__btn">3500 грн/мес</button>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
 
-		<div class="container blog">
-			<h2 class="title">Блог</h2>
-			<ul class="blog__list">
-				<li class="blog__item">
-					<img class="blog__img" src="" alt="">
-					<span class="blog__type">Новости</span><span class="blog_date">30.01.21</span>
-					<h3 class="blog__title">Lorem Ipsum</h3>
-					<p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at nibh....</p>
-				</li>
-				<li>
-					<img src="" alt="">
-					<span>Новости</span><span>30.01.21</span>
-					<h3>Lorem Ipsum</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at nibh....</p>
-				</li>
-				<li>
-					<img src="" alt="">
-					<span>Новости</span><span>30.01.21</span>
-					<h3>Lorem Ipsum</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at nibh....</p>
-				</li>
-			</ul>
-		</div>
+		<section class="section">
+			<div class="container reviews">
+				<h2 class="section__title">Отзывы</h2>
+				<div>
+					<ul class="reviews__list">
+						<li class="reviews__user">
+							<img src="" alt="">
+							<h3 class="reviews__user-name">Name</h3>
+							<h4 class="reviews__user-status">Status</h4>
+							<p class="reviews__user-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu semper
+								justo. Etiam venenatis cursus
+								vulputate. Duis sollicitudin aliquam metus, vel ullamcorper arcu vulputateLorem ipsum dolor sit amet,
+								consectetur elit.
+							</p>
+						</li>
+						<li>
+							<img src="" alt="">
+							<h3>Name</h3>
+							<h4>Status</h4>
+							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu semper justo. Etiam venenatis
+								cursus
+								vulputate. Duis sollicitudin aliquam metus, vel ullamcorper arcu vulputateLorem ipsum dolor sit amet,
+								consectetur elit.
+							</p>
+						</li>
+						<li>
+							<img src="" alt="">
+							<h3>Name</h3>
+							<h4>Status</h4>
+							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu semper justo. Etiam venenatis
+								cursus
+								vulputate. Duis sollicitudin aliquam metus, vel ullamcorper arcu vulputateLorem ipsum dolor sit amet,
+								consectetur elit.
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
 
 
+		<section class="section">
+			<div class="container">
+				<h2 class="section__title">Часто задаваемые вопросы</h2>
+				<ul class="questions">
+					<li class="question">
+						<div class="dot"></div>
+						<p class="question__text">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+						<button class="question__more-btn"><span class="plus"></span></button>
+					</li>
+					<li class="question">
+						<div class="dot"></div>
+						<p class="question__text">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+						<button class="question__more-btn"><span class="plus"></span></button>
+					</li>
+					<li class="question">
+						<div class="dot"></div>
+						<p class="question__text">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+						<button class="question__more-btn"><span class="plus"></span></button>
+					</li>
+					<li class="question">
+						<div class="dot"></div>
+						<p class="question__text">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+						<button class="question__more-btn"><span class="plus"></span></button>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="container">
+				<h2 class="section__title">Блог</h2>
+				<ul class="posts">
+					<li class="post">
+						<img src="img/blog_1.jpg" alt="" loading="lazy">
+						<div class="post__text">
+							<p class="post__info"><span>Новости</span><span>30.01.21</span></p>
+							<h3 class="post__title">Lorem Ipsum</h3>
+							<p class="post__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at nibh....</p>
+						</div>
+					</li>
+					<li class="post">
+						<img src="img/blog_2.jpg" alt="" loading="lazy">
+						<div class="post__text">
+							<p class="post__info"><span>Новости</span><span>30.01.21</span></p>
+							<h3 class="post__title">Lorem Ipsum</h3>
+							<p class="post__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at nibh....</p>
+						</div>
+					</li>
+					<li class="post">
+						<img src="img/blog_3.jpg" alt="" loading="lazy">
+						<div class="post__text">
+							<p class="post__info"><span>Новости</span><span>30.01.21</span></p>
+							<h3 class="post__title">Lorem Ipsum</h3>
+							<p class="post__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at nibh....</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
 	</main>
 
 	<footer>
-		<div></div>
+		<!-- <div></div>
 
 		<div>
 			<div>
@@ -248,7 +351,7 @@
 				<p>+373 67-74-27-77</p>
 			</div>
 
-		</div>
+		</div> -->
 	</footer>
 </body>
 
