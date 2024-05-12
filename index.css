@@ -34,6 +34,11 @@ main{
 .header__logo {
 }
 .nav__list {
+	display: flex;
+	justify-content: space-between;
+}
+.nav__item{
+
 }
 .container{
 	margin-left: auto;
@@ -97,13 +102,13 @@ main{
 		margin-bottom: 50px;
 	}
 }
-.hero__title {
+/* .hero__title {
 	font-weight: 750;
 	font-size: 25px;
 	line-height: 1.1;
 
 	color: #9E1651;
-}
+} */
 @media screen and (min-width: 768px) {
 	.about{
 		display: flex;
@@ -273,48 +278,48 @@ main{
 		width: 450px;
 	}
 }
+
 .price:nth-child(odd) {
 	background: #FFF1F7;
 }
 .price:nth-child(even){
 	background: #E6F0FF;
 }
-.price:nth-child(even) .price__btn-wrapper{
+
+.price .price__btn-wrapper{
 	margin-top: 30px;
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 19px;
-	border: 1px solid #4D8BF4;
+	border: 1px solid;
 }
-.price:nth-child(even) .price__btn{
-	cursor: pointer;
-	font-weight: 750;
-	font-size: 20px;
-	padding: 15px 55px;
-	border: 0px;
-	background: #4D8BF4;
-	border-radius: 15px;
-	color: #FFFFFF;
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.price:nth-child(even) .price__btn-wrapper{
+	border-color:#4D8BF4;
 }
 .price:nth-child(odd) .price__btn-wrapper{
-	margin-top: 30px;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 19px;
-	border: 1px solid #e81772;
+	border-color: #e81772;
 }
-.price:nth-child(odd) .price__btn{
+
+.price .price__btn{
 	cursor: pointer;
 	font-weight: 750;
 	font-size: 20px;
 	padding: 15px 55px;
 	border: 0px;
-	background: #E81772;
 	border-radius: 15px;
 	color: #FFFFFF;
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.price:nth-child(even) .price__btn{
+	background: #4D8BF4;
+}
+.price:nth-child(odd) .price__btn{
+	background: #E81772;
+}
+.price__btn:hover{
+	transform: translateY(10px) translateX(10px)
+}
+
 .price__img{
 	height: 220px;
 	border-radius: 15px;
@@ -374,9 +379,6 @@ main{
 		padding-left: 90px;
 		gap: 25px;
 	}
-}
-.price__btn:hover{
-	transform: translateY(10px) translateX(10px)
 }
 
 .questions {
@@ -589,6 +591,62 @@ main{
 	}
 }
 
+/* Price page */
+.courses{
+}
+.course__item{
+	display: flex;
+	flex-direction: row;
+}
+.course__left{
+	width: 450px;
+}
+.course__img{
+
+}
+.course__centr{
+
+}
+.course__name{
+	font-size: 30px;
+}
+.course__features{
+}
+.features__item{
+
+}
+.course__right{
+
+}
+.course__price{
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.course__btn-wrapper{
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 19px;
+	border: 1px solid;
+}
+.course__btn{
+	cursor: pointer;
+	font-weight: 750;
+	font-size: 20px;
+	padding: 15px 55px;
+	border: 0px;
+	border-radius: 15px;
+	color: #FFFFFF;
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.course__btn:hover{
+	transform: translateY(10px) translateX(10px)
+}
+
+
+
+/* Footer */
 .footer {
 }
 .footer__logo {

@@ -4,96 +4,136 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Grigo Academy</title>
+	<link rel="icon" href="img/fav_2.svg" sizes="32x32" type="image/svg">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-	<header>
-		<nav class="header-nav">
-			<ul class="nav-list">
-				<li class="nav-list__item">Home</li>
-				<li class="nav-list__item">Price</li>
-				<li class="nav-list__item">Blog</li>
-				<li class="nav-list__item">Questions</li>
-				<li class="nav-list__item">Reviews</li>
-			</ul>
-		</nav>
-
-		<button class="btn">Записаться на урок</button>
-	</header>
+	<div class="container">
+		<header class="header">
+			<nav class="header__nav">
+				<!-- 		<a class="header__logo" href="">
+				<svg>
+					<use href="img/header_logo.svg"></use>
+				</svg>
+			</a> -->
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a href="/index.html">Home</a>
+					</li>
+					<li class="nav__item">
+						<a href="/prices.html">Price</a>
+					</li>
+					<li class="nav__item">
+						<a href="/blog.html">Blog</a>
+					</li>
+					<li class="nav__item">
+						<a href="#">Question</a>
+					</li>
+					<li class="nav__item">
+						<a href="/reviews.html">Reviews</a>
+					</li>
+					<li class="nav__item">
+						<a href="#">Записаться на урок</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+	</div>
 
 	<main>
-		<div>
-			<h1 class="hero">Цены</h1>
+		<section class="section">
+			<div class="container">
+				<h1 class="section__title">Цены</h1>
+			</div>
+		</section>
 
-			<ul class="courses">
-				<li class="courses__item">
-					<div class="courses__left">
-						<img class="courses__img" src="" alt="">
-					</div>
-					<div class="courses__centr">
-						<h2 class="courses__name">Английский для подростков (9-12 классов)</h2>
-						<ul class="courses__features">
-							<li class="features__item">Количество студентов: 6</li>
-							<li class="features__item">Минут: 60</li>
-							<li class="features__item">Уроков в неделю: 2</li>
-							<li class="features__item">10:00 / 19:00</li>
-							<li class="features__item">2 месяца</li>
-							<li class="features__item">пн / ср / чт</li>
-						</ul>
-					</div>
-					<div class="courses__right">
-						<p class="courses__price">8 300 грн/мес</p>
-						<button class="btn">Записаться </button>
-					</div>
-				</li>
+		<section class="section">
+			<div class="container">
+				<ul class="courses">
+					<li class="course__item">
+						<div class="course__left">
+							<img class="course__img" src="/img/price_1.jpg" alt="">
+						</div>
+						<div class="course__centr">
+							<h2 class="course__name">Английский для подростков (9-12 классов)</h2>
+							<ul class="course__features">
+								<li class="features__item">Количество студентов: 6</li>
+								<li class="features__item">Минут: 60</li>
+								<li class="features__item">Уроков в неделю: 2</li>
+								<li class="features__item">10:00 / 19:00</li>
+								<li class="features__item">2 месяца</li>
+								<li class="features__item">пн / ср / чт</li>
+							</ul>
+						</div>
+						<div class="course__right">
+							<p class="course__price">8 300 грн/мес</p>
+							<div class="course__btn-wrapper">
+								<button class="course__btn">Записаться </button>
+							</div>
+						</div>
+					</li>
 
-				<li class="courses__item">
-					<div class="courses__left">
-						<img src="" alt="">
-					</div>
-					<div class="courses__centr">
-						<h2>Английский для подростков (9-12 классов)</h2>
-						<ul>
-							<li>Количество студентов: 6</li>
-							<li>Минут: 60</li>
-							<li>Уроков в неделю: 2</li>
-							<li>10:00 / 19:00</li>
-							<li>2 месяца</li>
-							<li>пн / ср / чт</li>
-						</ul>
-					</div>
-					<div class="courses__right">
-						<p class="courses__price">8 300 грн/мес</p>
-						<button class="btn">Записаться </button>
-					</div>
-				</li>
+					<!-- 			<li class="course__item">
+						<div class="course__left">
+							<img src="/img/price_2.jpg" alt="">
+						</div>
+						<div class="course__centr">
+							<h2>Профессиональный
+								английский</h2>
+							<ul>
+								<li>Количество студентов: 6</li>
+								<li>Минут: 60</li>
+								<li>Уроков в неделю: 3</li>
+								<li>20:00 / 22:30</li>
+								<li>2 месяца</li>
+								<li>вт / чт / сб</li>
+							</ul>
+						</div>
+						<div class="course__right">
+							<p class="course__price">8 300 грн/мес</p>
+							<div class="course__btn-wrapper">
+								<button class="course__btn">Записаться </button>
+							</div>
+						</div>
+					</li>
 
-				<li class="courses__item">
-					<div class="courses__left">
-						<img src="" alt="">
-					</div>
-					<div class="courses__centr">
-						<h2>Английский для подростков (9-12 классов)</h2>
-						<ul>
-							<li>Количество студентов: 6</li>
-							<li>Минут: 60</li>
-							<li>Уроков в неделю: 2</li>
-							<li>10:00 / 19:00</li>
-							<li>2 месяца</li>
-							<li>пн / ср / чт</li>
-						</ul>
-					</div>
-					<div class="courses__right">
-						<p class="courses__price">8 300 грн/мес</p>
-						<button class="btn">Записаться </button>
-					</div>
-				</li>
-			</ul>
-		</div>
+					<li class="course__item">
+						<div class="course__left">
+							<img src="/img/price_3.jpg" alt="">
+						</div>
+						<div class="course__centr">
+							<h2>Английский для
+								детей (1-8 классов)</h2>
+							<ul>
+								<li>Количество студентов: 6</li>
+								<li>Минут: 60</li>
+								<li>Уроков в неделю: 2</li>
+								<li>10:00 / 19:00</li>
+								<li>2 месяца</li>
+								<li>пн / ср / чт</li>
+							</ul>
+						</div>
+						<div class="course__right">
+							<p class="course__price">8 300 грн/мес</p>
+							<div class="course__btn-wrapper">
+								<button class="course__btn">Записаться </button>
+							</div>
+						</div>
+					</li> -->
+				</ul>
+			</div>
+		</section>
+
 	</main>
 
-	<footer>
+	<!-- <footer>
 		<div></div>
 
 		<div>
@@ -101,7 +141,7 @@
 				<nav class="footer__nav">
 					<ul class="nav-list">
 						<li class="nav-list__item">Home</li>
-						<li class="nav-list__item">courses</li>
+						<li class="nav-list__item">course</li>
 						<li class="nav-list__item">Blog</li>
 						<li class="nav-list__item">Questions</li>
 						<li class="nav-list__item">Reviews</li>
@@ -117,7 +157,7 @@
 			</div>
 
 		</div>
-	</footer>
+	</footer> -->
 </body>
 
 </html>
