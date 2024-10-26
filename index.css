@@ -16,7 +16,6 @@ ul {
 }
 img {
   display: block;
-  max-width: 100%;
   height: auto;
 }
 a,
@@ -85,8 +84,8 @@ main{
 	font-weight: 750;
 	font-size: 30px;
 	line-height: 1.23;
-	text-align: center;
-	margin-bottom: 25px;
+	text-align: center;/* 
+	margin-bottom: 25px; */
 	
 	color: #9E1651;
 }
@@ -251,38 +250,37 @@ main{
 	margin-top: 10px;
 }
 
-
+/* Prices page */
 .prices-list {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 30px;
 }
-@media screen and (min-width: 1920px) {
+/* @media screen and (min-width: 1920px) {
 	.prices-list{
 		gap: 99px;
 	}
-	
-}
-.price {
+} */
+.course__item {
 	width: 290px;
 	border-radius: 15px;
 }
 @media screen and (min-width:768px) {
-	.price {
+	.course__item {
 		width: 340px
 	}
 }
 @media screen and (min-width:1920px) {
-	.price {
+	.course__item {
 		width: 450px;
 	}
 }
 
-.price:nth-child(odd) {
+.course__item:nth-child(odd) {
 	background: #FFF1F7;
 }
-.price:nth-child(even){
+.course__item:nth-child(even){
 	background: #E6F0FF;
 }
 
@@ -527,6 +525,9 @@ main{
 		width: 437px;
 	}
 }
+.post__img{
+	width: 100%;
+}
 .post__text{
 	padding: 10px 15px 20px;
 }
@@ -593,38 +594,39 @@ main{
 
 /* Price page */
 .courses{
+
 }
 .course__item{
 	display: flex;
-	flex-direction: row;
+	flex-direction:column;
 }
 .course__left{
-	width: 450px;
 }
 .course__img{
-
+	width: 290px;
 }
 .course__centr{
-
+	padding: 10px 20px;
 }
 .course__name{
-	font-size: 30px;
+	font-size: 25px;
 }
 .course__features{
 }
 .features__item{
-
+	font-size: 16px;
+	margin-top: 5px;
 }
 .course__right{
-
+	padding: 10px 20px;
 }
 .course__price{
-	font-size: 36px;
+	font-size: 18px;
 	font-weight: bold;
 }
 
 .course__btn-wrapper{
-	margin-top: 30px;
+	margin-top: 15px;
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 19px;
@@ -634,6 +636,7 @@ main{
 	cursor: pointer;
 	font-weight: 750;
 	font-size: 20px;
+	width: 100%;
 	padding: 15px 55px;
 	border: 0px;
 	border-radius: 15px;
@@ -643,7 +646,12 @@ main{
 .course__btn:hover{
 	transform: translateY(10px) translateX(10px)
 }
-
+.course__item:nth-child(odd) .course__btn{
+	background-color: #e81772;
+}
+.course__item:nth-child(even) .course__btn{
+	background-color: #4D8BF4;
+}
 
 
 /* Footer */
