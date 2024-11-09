@@ -1,5 +1,5 @@
 body{
-	font-family: Rubik;
+	font-family: /* "Avenir Next Cyr" */;
 	font-style: normal;
 	color: #464646;
 }
@@ -296,6 +296,7 @@ main{
 }
 .price__img{
 	height: 220px;
+	width: 100%;
 	border-radius: 15px;
 }
 @media screen and (min-width:768px) {
@@ -671,15 +672,49 @@ main{
 .course__item:nth-child(even) .course__btn{
 	background-color: #4D8BF4;
 }
-
 /* And of Prices page */
+
 
 /* Footer */
 .footer {
+	background-color: #F0F6FF;
 }
-.footer__logo {
+.footer__logo-container {
+}
+.footer__logo{
+
 }
 .footer__right {
+	margin-bottom: 5px;
 }
-.contacts {
+.footer__nav{
+	font-size: 18px;
+	font-weight: 400;
+}
+.nav-list{
+	
+}
+.nav-list__item{
+	margin-bottom: 5px;
+}
+.nav-list__link{
+}
+.footer__btn{
+	cursor: pointer;
+	width: 100%;
+	font-weight: 700;
+	font-size: 20px;
+	padding: 15px 20px;
+	border: 1px solid #3886FE;
+	border-radius: 13px;
+	color: #3886FE;
+	background-color: transparent;
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__contacts {
+	font-size: 18px;
+}
+.contacts-list{
+	margin-bottom: 5px;
+	color: #2C2C2C;
 }
