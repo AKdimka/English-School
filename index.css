@@ -698,6 +698,10 @@ main{
 	margin-bottom: 5px;
 }
 .nav-list__link{
+		color: #2C2C2C;
+}
+.nav-list__link:visited{
+	color: #2C2C2C;
 }
 .footer__btn{
 	cursor: pointer;
@@ -715,6 +719,10 @@ main{
 	font-size: 18px;
 }
 .contacts-list{
-	margin-bottom: 5px;
+}
+.contacts-link{
+	color: #2C2C2C;
+}
+.contacts-link:visited{
 	color: #2C2C2C;
 }
