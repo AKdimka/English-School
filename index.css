@@ -1,5 +1,5 @@
 body{
-	font-family: /* "Avenir Next Cyr" */;
+	font-family: "Avenir Next Cyr";
 	font-style: normal;
 	color: #464646;
 }
@@ -42,16 +42,16 @@ main{
 .container{
 	margin-left: auto;
 	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) {
   .container {
 		max-width: 320px;
-    padding-left: 15px;
-		padding-right: 15px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1920px) {
+@media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
 		padding-left: 25px;
@@ -239,6 +239,7 @@ main{
 	}
 }
 .teacher__experiens {
+	
 }
 .teacher__age {
 }
@@ -672,7 +673,7 @@ main{
 .course__item:nth-child(even) .course__btn{
 	background-color: #4D8BF4;
 }
-/* And of Prices page */
+/* End of Prices page */
 
 
 /* Footer */
@@ -682,7 +683,7 @@ main{
 .footer__logo-container {
 }
 .footer__logo{
-
+	width: 100%;
 }
 .footer__right {
 	margin-bottom: 5px;
