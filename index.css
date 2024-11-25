@@ -738,27 +738,70 @@ main{
 
 /* Footer */
 .footer {
+	padding: 5px 0;
 	background-color: #F0F6FF;
 }
+@media screen and (min-width:768px) {
+	.footer{
+		padding: 10px 0;
+	}
+}
+@media screen and (min-width: 768px) {
+	.footer>.container {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+}
+
 .footer__logo-container {
 }
 .footer__logo{
 	width: 100%;
 }
+@media screen and (min-width:768px) {
+	.footer__logo {
+			width: 290px;
+		}
+}
 .footer__right {
-	margin-bottom: 5px;
+}
+@media screen and (min-width:768px) {
+	.footer__right{
+		width: 100%;
+
+		margin-left: 30px;
+	}
 }
 .footer__nav{
 	font-size: 18px;
 	font-weight: 400;
 }
+@media screen and (min-width:768px) {
+	.footer__nav{
+		margin-bottom: 20px;
+	}
+}
 .nav-list{
 	
 }
-.nav-list__item{
-	margin-bottom: 5px;
+@media screen and (min-width: 768px) {
+	.nav-list {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		margin-bottom: 15px;
+	}
 }
+@media screen and (max-width: 767px) {
+	.nav-list__item {
+			margin-bottom: 5px;
+		}
+}
+
 .nav-list__link{
+	cursor: pointer;
 		color: #2C2C2C;
 }
 .nav-list__link:visited{
