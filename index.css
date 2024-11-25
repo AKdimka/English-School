@@ -6,6 +6,8 @@ body{
 h1,
 h2,
 h3,
+h4,
+h5,
 p {
   margin: 0;
 }
@@ -85,6 +87,8 @@ main{
 	font-size: 30px;
 	line-height: 1.23;
 	text-align: center;
+
+	margin-bottom: 20px;
 	
 	color: #9E1651;
 }
@@ -356,7 +360,61 @@ main{
 		gap: 25px;
 	}
 }
+/* _____ End of price section _____ */
 
+/* Reviews section */
+.reviews{
+
+	padding: 20px 30px;
+
+	border-radius: 15px;
+	background-color: #FFF1F7;
+}
+.reviews__list{
+
+}
+.user{
+
+	padding: 10px 20px;
+
+	border-radius: 8px;
+	background: #ffffff;
+}
+.user__info{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	margin-bottom: 15px;
+}
+.user__photo{
+	height: 100%;
+	width: 80px;
+
+	margin-right: 10px;
+
+	border-radius: 50%;
+	overflow: hidden;
+}
+.user__text-info{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.user__name{
+	font-size: 18px;
+	font-weight: 700;
+}
+.user__status{
+	font-size: 18px;
+	font-weight: 400;
+}
+.user__text{
+
+}
+/* _____ End of reviews section _____ */
+
+/* Questions section */
 .questions {
 	display: flex;
 	flex-direction: column;
@@ -474,8 +532,9 @@ main{
 .plus::after{
 	transform: rotate(90deg);
 }
+/* _____ End questions _____ */
 
-
+/* Posts section */
 .posts {
 	display: flex;
 	flex-wrap: wrap;
@@ -569,6 +628,7 @@ main{
 		margin-top: 20px;
 	}
 }
+/* _____ End Post/Blog section _____ */
 
 
 /* Start of Prices page */

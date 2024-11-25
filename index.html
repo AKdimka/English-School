@@ -10,7 +10,7 @@
 		content="Курсы английского, школа английского языка, английский для школьников, английский для подростков, английский Профессиональныйб изучение языка" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Grigo Academy</title>
-	<link rel="icon" href="img/fav_2.svg" sizes="32x32" type="image/svg">
+	<link rel="icon" href="img/fav.svg" sizes="32x32" type="image/svg">
 	<link rel="stylesheet"
 		href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -233,21 +233,28 @@
 		</section>
 
 		<section class="section">
-			<div class="container reviews">
+			<div class="container">
 				<h2 class="section__title">Отзывы</h2>
-				<div>
+				<div class="reviews">
+
 					<ul class="reviews__list">
-						<li class="reviews__user">
-							<img src="" alt="">
-							<h3 class="reviews__user-name">Name</h3>
-							<h4 class="reviews__user-status">Status</h4>
-							<p class="reviews__user-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu semper
+						<li class="user">
+							<div class="user__info">
+								<img class="user__photo" src="./img/user_1.jpg" alt="Photo of user_1">
+								<div class="user__text-info">
+									<h3 class="user__name">Vladimir Svetchuk</h3>
+									<h4 class="user__status">Student</h4>
+								</div>
+								
+							</div>
+
+							<p class="user__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu semper
 								justo. Etiam venenatis cursus
 								vulputate. Duis sollicitudin aliquam metus, vel ullamcorper arcu vulputateLorem ipsum dolor sit amet,
 								consectetur elit.
 							</p>
 						</li>
-						<li>
+						<!-- <li>
 							<img src="" alt="">
 							<h3>Name</h3>
 							<h4>Status</h4>
@@ -266,7 +273,7 @@
 								vulputate. Duis sollicitudin aliquam metus, vel ullamcorper arcu vulputateLorem ipsum dolor sit amet,
 								consectetur elit.
 							</p>
-						</li>
+						</li> -->
 					</ul>
 				</div>
 			</div>
@@ -337,11 +344,9 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="footer__logo-container">
-				<!-- <svg>
-					<use href="./img/symbol-defs.svg#footer_logo"></use>
-				</svg> -->
 				<img class="footer__logo" src="img/footer-logo.png" alt="" loading="lazy">
 			</div>
+
 			<div class="footer__right">
 				<nav class="footer__nav">
 					<ul class="nav-list">
@@ -364,15 +369,21 @@
 				
 					<button class="footer__btn">Записаться на урок</button>
 				</nav>
-			</div>
 
-			<div class="footer__contacts">
-				<ul class="contacts-list">
-					<li>
-						<a class="contacts-link" href="+380677427777">+380 67-74-27-777</a></li>
-					<li>
-						<a class="contacts-link" href="+380667427777">+380 66-74-27-777</a></li>
-				</ul>
+				<div class="footer__contacts">
+					<ul class="contacts-list">
+						<li>
+							<a class="contacts-link" href="+380677427777">+380 67-74-27-777</a>
+						</li>
+						<li>
+							<a class="contacts-link" href="+380667427777">+380 66-74-27-777</a>
+						</li>
+					</ul>
+
+					<!-- <h2>Как нас найти:</h2>
+					<p>Киевский проспект 18</p> -->
+				</div>
+				
 			</div>
 
 		</div>	
