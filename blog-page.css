@@ -1,0 +1,317 @@
+/* Start od Blog page */
+body {
+	font-family: "Avenir Next Cyr";
+	font-style: normal;
+	color: #464646;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+	margin: 0;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+img {
+	display: block;
+	height: auto;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+main {
+	background: #ffffff;
+}
+
+.header {
+}
+.header__nav {
+}
+.header__logo {
+}
+.nav__list {
+	display: flex;
+	justify-content: space-between;
+}
+.nav__item {
+}
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+@media screen and (min-width: 320px) {
+	.container {
+		max-width: 320px;
+	}
+}
+@media screen and (min-width: 768px) {
+	.container {
+		max-width: 768px;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+}
+@media screen and (min-width: 1920px) {
+	.container {
+		max-width: 1600px;
+	}
+}
+
+.section {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+	.section {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
+@media screen and (min-width: 1900px) {
+	.section {
+		padding-top: 55px;
+		padding-bottom: 55px;
+	}
+}
+.section__title {
+	font-weight: 750;
+	font-size: 30px;
+	line-height: 1.23;
+	text-align: center;
+
+	margin-bottom: 20px;
+
+	color: #9e1651;
+}
+@media screen and (min-width: 768px) {
+	.section__title {
+		font-size: 40px;
+		margin-bottom: 35px;
+	}
+}
+@media screen and (min-width: 1920px) {
+	.section__title {
+		font-size: 70px;
+		margin-bottom: 50px;
+	}
+}
+
+/* Footer */
+.footer {
+	background-color: #f0f6ff;
+}
+@media (max-width: 767px) {
+	.footer {
+		padding: 5px 0 10px;
+	}
+}
+@media screen and (max-width: 1919px) {
+	.footer {
+		padding: 10px 0;
+	}
+}
+@media screen and (min-width: 768px) {
+	.footer > .container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+.footer__logo-container {
+}
+@media (min-width: 1920px) {
+	.footer__logo-container {
+		padding: 18px 0 117px;
+	}
+}
+.footer__logo {
+	width: 100%;
+}
+@media screen and (min-width: 768px) {
+	.footer__logo {
+		width: 290px;
+	}
+}
+@media screen and (min-width: 1920px) {
+	.footer__logo {
+		width: 461px;
+	}
+}
+.footer__right {
+}
+@media screen and (min-width: 768px) {
+	.footer__right {
+		width: 100%;
+
+		margin-left: 30px;
+	}
+}
+@media screen and (min-width: 1920px) {
+	.footer__right {
+		padding-top: 70px;
+		margin-left: 110px;
+	}
+}
+.footer__nav {
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+	.footer__nav {
+		margin-bottom: 25px;
+	}
+}
+@media screen and (min-width: 1920px) {
+	.footer__nav {
+		display: flex;
+		flex-direction: row;
+
+		margin-bottom: 70px;
+	}
+}
+.nav-list {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+
+	margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+	.nav-list {
+		flex-direction: row;
+		justify-content: space-between;
+
+		margin-bottom: 15px;
+	}
+}
+@media screen and (min-width: 1920px) {
+	.nav-list {
+		align-items: center;
+
+		font-size: 24px;
+		gap: 60px;
+
+		margin-bottom: 0;
+	}
+}
+
+.nav-list__link {
+	cursor: pointer;
+	color: #2c2c2c;
+}
+.nav-list__link:visited {
+	color: #2c2c2c;
+}
+.footer__btn {
+	cursor: pointer;
+	min-width: 100%;
+	font-weight: 700;
+	font-size: 20px;
+	padding: 15px 20px;
+	border: 1px solid #3886fe;
+	border-radius: 13px;
+	color: #3886fe;
+	background-color: transparent;
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1920px) {
+	.footer__btn {
+		font-size: 27px;
+
+		min-width: 292px;
+		padding: 9px 20px 12px;
+		margin-left: auto;
+	}
+}
+.footer__contacts {
+	font-size: 18px;
+}
+@media (min-width: 1920px) {
+	.footer__contacts {
+		font-size: 24px;
+	}
+}
+.contacts-list {
+	margin-bottom: 15px;
+}
+@media (min-width: 1920px) {
+	.contacts-list {
+		margin-bottom: 30px;
+	}
+}
+@media (min-width: 768px) {
+	.contacts-list > li:nth-child(-n + 1) {
+		margin-bottom: 10px;
+	}
+}
+.contacts-link {
+	color: #2c2c2c;
+}
+.contacts-link:visited {
+	color: #2c2c2c;
+}
+.contacts-title {
+	font-size: 20px;
+	font-weight: 700;
+
+	margin-bottom: 5px;
+}
+@media (min-width: 1920px) {
+	.contacts-title {
+		font-size: 24px;
+	}
+}
+.contacts-address {
+}
+
+.posts-list {
+}
+.post {
+}
+.post__img {
+	width: 100%;
+}
+.post__date {
+	font-size: 10px;
+}
+.post__title {
+	font-size: 18px;
+	font-weight: 700;
+}
+.post__text {
+	font-size: 12px;
+}
+.search-box {
+}
+.mini-title {
+}
+.popular-articles {
+}
+.popular__list {
+}
+.popular__item {
+	width: 290px;
+}
+.popular__img-wrapper {
+}
+.popular__img {
+	width: 100%;
+}
+.popular__info-wrapper {
+}
+.popular__date {
+}
+.popular__text {
+}
+/* _____ End of Blog Page _____ */

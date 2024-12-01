@@ -15,7 +15,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="blog-page.css">
 </head>
 
 <body>
@@ -52,55 +52,76 @@
 </div>
 
 	<main>
-		<h1>Блог</h1>
-
-		<div>
-			<div>
-				<img src="" alt="">
-				<h2>Lorem Ipsum simply dummy</h2>
-				<p>Lorem Ipsum has been the industry's standard dummy text ever since when an unknown printer took a galley of
-					type and scrambled it to make a type specimen book. It is a long established fact that a reader will be
-					distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is
-					that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
-					making it look like readable English. </p>
-			</div>
-			<div class="popular-articles">
-				<input type="text">
-				<h2>Популярные статьи</h2>
-				<ul>
-					<li>
-						<div><img src="" alt=""></div>
-						<div>
-							<p>01.04.21</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ...</p>
-						</div>
-					</li>
-					<li>
-						<div><img src="" alt=""></div>
-						<div>
-							<p>01.04.21</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ...</p>
-						</div>
-					</li>
-					<li>
-						<div><img src="" alt=""></div>
-						<div>
-							<p>01.04.21</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ...</p>
-						</div>
-					</li>
-					<li>
-						<div><img src="" alt=""></div>
-						<div>
-							<p>01.04.21</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ...</p>
-						</div>
+		<section class="section">
+			<h1 class="section__title">Блог</h1>
+			
+			<div class="container">
+				<ul class="posts-list">
+					<li class="post">
+						<img class="post__img" src="img/blog_1.jpg" alt="Британский флаг на фоне неба" loading="lazy">
+						<span class="post__date">01.04.21</span>
+						<h2 class="post__title">Lorem Ipsum simply dummy</h2>
+						<p class="post__text">Lorem Ipsum has been the industry's standard dummy text ever since when an unknown printer took a galley of
+							type and scrambled it to make a type specimen book. It is a long established fact that a reader will be
+							distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is
+							that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
+							making it look like readable English. </p>
 					</li>
 				</ul>
-				<button type="button">СМОТРЕТЬ ВСЕ СТАТЬИ</button>
-			</div>
-		</div>
+				
+				<div class="search-box">
+					<h2 class="mini-title">Поиск</h2>
+					<input type="text">
+				</div>
 
+				<div class="popular-articles">
+					<h2 class="mini-title">Популярные статьи</h2>
+					<ul class="popular__list">
+						<li class="popular__item">
+							<div class="popular__img-wrapper">
+								<img class="popular__img" src="img/blog_2.jpg" alt="" loading="lazy">
+							</div>
+							
+							<div class="popular__info-wrapper">
+								<p class="popular__date">01.04.21</p>
+								<p class="popular__text">Lorem #1 ipsum dolor sit amet, consectetur adipiscing elit ...</p>
+							</div>
+						</li>
+						<li class="popular__item">
+							<div class="popular__img-wrapper">
+								<img class="popular__img" src="img/blog_3.jpg" alt="" loading="lazy">
+							</div>
+						
+							<div class="popular__info-wrapper">
+								<p class="popular__date">01.04.21</p>
+								<p class="popular__text">Lorem #2 ipsum dolor sit amet, consectetur adipiscing elit ...</p>
+							</div>
+						</li>
+						<li class="popular__item">
+							<div class="popular__img-wrapper">
+								<img class="popular__img" src="img/blog_1.jpg" alt="" loading="lazy">
+							</div>
+						
+							<div class="popular__info-wrapper">
+								<p class="popular__date">01.04.21</p>
+								<p class="popular__text">Lorem #3 ipsum dolor sit amet, consectetur adipiscing elit ...</p>
+							</div>
+						</li>
+						<li class="popular__item">
+							<div class="popular__img-wrapper">
+								<img class="popular__img" src="img/blog_2.jpg" alt="" loading="lazy">
+							</div>
+						
+							<div class="popular__info-wrapper">
+								<p class="popular__date">01.04.21</p>
+								<p class="popular__text">Lorem #4 ipsum dolor sit amet, consectetur adipiscing elit ...</p>
+							</div>
+						</li>
+					</ul>
+					<button type="button">СМОТРЕТЬ ВСЕ СТАТЬИ</button>
+				</div>
+			</div>
+		</section>
 	</main>
 
 	<footer class="footer">

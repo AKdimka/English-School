@@ -652,164 +652,6 @@ main {
 }
 /* _____ End Post/Blog section _____ */
 
-/* Start of Prices page */
-.courses {
-}
-.course__item {
-	border-radius: 15px;
-	margin-bottom: 25px;
-}
-.course__item:last-child {
-	margin-bottom: 0;
-}
-.course__item:nth-child(odd) {
-	background: #fff1f7;
-}
-.course__item:nth-child(even) {
-	background: #e6f0ff;
-}
-@media screen and (min-width: 768px) {
-	.course__item {
-		display: flex;
-		flex-direction: row;
-	}
-}
-.course__left {
-}
-.course__img {
-	width: 290px;
-	height: 100%;
-	border-radius: 15px;
-	overflow: hidden;
-}
-@media (min-width: 1920px) {
-	.course__img {
-		width: 450px;
-		height: 387px;
-	}
-}
-.course__text-wrapper {
-	padding: 10px 20px;
-}
-@media screen and (min-width: 768px) {
-	.course__text-wrapper {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-	}
-}
-@media (min-width: 1920px) {
-	.course__text-wrapper {
-		flex-direction: row;
-		padding: 40px 100px 45px;
-	}
-}
-.course__centr {
-}
-@media (max-width: 1919px) {
-	.course__centr {
-		margin-bottom: 10px;
-	}
-}
-.course__name {
-	font-size: 25px;
-	margin-bottom: 5px;
-}
-@media screen and (min-width: 768px) {
-	.course__name {
-		font-size: 20px;
-	}
-}
-@media screen and (min-width: 1920px) {
-	.course__name {
-		font-size: 30px;
-
-		margin-bottom: 50px;
-	}
-}
-.course__features {
-}
-@media screen and (min-width: 768px) {
-	.course__features {
-		column-count: 2;
-	}
-}
-.features__item {
-	font-size: 15px;
-	margin-bottom: 5px;
-}
-@media (min-width: 1920px) {
-	.features__item {
-		font-size: 25px;
-		margin-bottom: 25px;
-	}
-	.features__item:nth-child(n + 4) {
-		margin-left: 88px;
-	}
-}
-.course__right {
-}
-@media (min-width: 1920px) {
-	.course__right {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-
-		margin-left: 127px;
-	}
-}
-.course__price {
-	font-size: 18px;
-	font-weight: bold;
-	margin-bottom: 15px;
-}
-.course__item:nth-child(odd) .course__price {
-	color: #e81772;
-}
-.course__item:nth-child(even) .course__price {
-	color: #4d8bf4;
-}
-@media screen and (max-width: 1919px) {
-	.course__price {
-		margin-bottom: 10px;
-	}
-}
-@media screen and (min-width: 1920px) {
-	.course__price {
-		font-size: 36px;
-	}
-}
-.course__btn-wrapper {
-	margin-left: auto;
-	margin-right: auto;
-}
-.course__btn {
-	cursor: pointer;
-	font-weight: 750;
-	font-size: 20px;
-	width: 100%;
-	padding: 15px 55px;
-	border-radius: 19px;
-	border: 1px solid;
-	color: #ffffff;
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.course__btn:hover {
-	transform: translateY(10px) translateX(10px);
-}
-.course__item:nth-child(odd) .course__btn {
-	background-color: #e81772;
-}
-.course__item:nth-child(even) .course__btn {
-	background-color: #4d8bf4;
-}
-@media (min-width: 1920px) {
-	.course__btn {
-		padding: 17px 55px;
-	}
-}
-/* End of Prices page */
-
 /* Footer */
 .footer {
 	background-color: #f0f6ff;
@@ -979,3 +821,164 @@ main {
 }
 .contacts-address {
 }
+/* _____ End of footer _____ */
+
+/* !---------- End of Main Page ---------- */
+
+/* Start of Prices page */
+.courses {
+}
+.course__item {
+	border-radius: 15px;
+	margin-bottom: 25px;
+}
+.course__item:last-child {
+	margin-bottom: 0;
+}
+.course__item:nth-child(odd) {
+	background: #fff1f7;
+}
+.course__item:nth-child(even) {
+	background: #e6f0ff;
+}
+@media screen and (min-width: 768px) {
+	.course__item {
+		display: flex;
+		flex-direction: row;
+	}
+}
+.course__left {
+}
+.course__img {
+	width: 290px;
+	height: 100%;
+	border-radius: 15px;
+	overflow: hidden;
+}
+@media (min-width: 1920px) {
+	.course__img {
+		width: 450px;
+		height: 387px;
+	}
+}
+.course__text-wrapper {
+	padding: 10px 20px;
+}
+@media screen and (min-width: 768px) {
+	.course__text-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
+@media (min-width: 1920px) {
+	.course__text-wrapper {
+		flex-direction: row;
+		padding: 40px 100px 45px;
+	}
+}
+.course__centr {
+}
+@media (max-width: 1919px) {
+	.course__centr {
+		margin-bottom: 10px;
+	}
+}
+.course__name {
+	font-size: 25px;
+	margin-bottom: 5px;
+}
+@media screen and (min-width: 768px) {
+	.course__name {
+		font-size: 20px;
+	}
+}
+@media screen and (min-width: 1920px) {
+	.course__name {
+		font-size: 30px;
+
+		margin-bottom: 50px;
+	}
+}
+.course__features {
+}
+@media screen and (min-width: 768px) {
+	.course__features {
+		column-count: 2;
+	}
+}
+.features__item {
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+@media (min-width: 1920px) {
+	.features__item {
+		font-size: 25px;
+		margin-bottom: 25px;
+	}
+	.features__item:nth-child(n + 4) {
+		margin-left: 88px;
+	}
+}
+.course__right {
+}
+@media (min-width: 1920px) {
+	.course__right {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		margin-left: 127px;
+	}
+}
+.course__price {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.course__item:nth-child(odd) .course__price {
+	color: #e81772;
+}
+.course__item:nth-child(even) .course__price {
+	color: #4d8bf4;
+}
+@media screen and (max-width: 1919px) {
+	.course__price {
+		margin-bottom: 10px;
+	}
+}
+@media screen and (min-width: 1920px) {
+	.course__price {
+		font-size: 36px;
+	}
+}
+.course__btn-wrapper {
+	margin-left: auto;
+	margin-right: auto;
+}
+.course__btn {
+	cursor: pointer;
+	font-weight: 750;
+	font-size: 20px;
+	width: 100%;
+	padding: 15px 55px;
+	border-radius: 19px;
+	border: 1px solid;
+	color: #ffffff;
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.course__btn:hover {
+	transform: translateY(10px) translateX(10px);
+}
+.course__item:nth-child(odd) .course__btn {
+	background-color: #e81772;
+}
+.course__item:nth-child(even) .course__btn {
+	background-color: #4d8bf4;
+}
+@media (min-width: 1920px) {
+	.course__btn {
+		padding: 17px 55px;
+	}
+}
+/* _____ End of Prices page _____ */
