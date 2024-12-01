@@ -682,6 +682,12 @@ main {
 	border-radius: 15px;
 	overflow: hidden;
 }
+@media (min-width: 1920px) {
+	.course__img {
+		width: 450px;
+		height: 387px;
+	}
+}
 .course__text-wrapper {
 	padding: 10px 20px;
 }
@@ -689,12 +695,21 @@ main {
 	.course__text-wrapper {
 		display: flex;
 		flex-direction: column;
-		align-content: space-between;
 		justify-content: space-between;
 	}
 }
+@media (min-width: 1920px) {
+	.course__text-wrapper {
+		flex-direction: row;
+		padding: 40px 100px 45px;
+	}
+}
 .course__centr {
-	margin-bottom: 10px;
+}
+@media (max-width: 1919px) {
+	.course__centr {
+		margin-bottom: 10px;
+	}
 }
 .course__name {
 	font-size: 25px;
@@ -705,11 +720,17 @@ main {
 		font-size: 20px;
 	}
 }
+@media screen and (min-width: 1920px) {
+	.course__name {
+		font-size: 30px;
+
+		margin-bottom: 50px;
+	}
+}
 .course__features {
 }
 @media screen and (min-width: 768px) {
 	.course__features {
-		height: 65px;
 		column-count: 2;
 	}
 }
@@ -717,16 +738,45 @@ main {
 	font-size: 15px;
 	margin-bottom: 5px;
 }
+@media (min-width: 1920px) {
+	.features__item {
+		font-size: 25px;
+		margin-bottom: 25px;
+	}
+	.features__item:nth-child(n + 4) {
+		margin-left: 88px;
+	}
+}
 .course__right {
+}
+@media (min-width: 1920px) {
+	.course__right {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		margin-left: 127px;
+	}
 }
 .course__price {
 	font-size: 18px;
 	font-weight: bold;
 	margin-bottom: 15px;
 }
-@media screen and (min-width: 768px) {
+.course__item:nth-child(odd) .course__price {
+	color: #e81772;
+}
+.course__item:nth-child(even) .course__price {
+	color: #4d8bf4;
+}
+@media screen and (max-width: 1919px) {
 	.course__price {
 		margin-bottom: 10px;
+	}
+}
+@media screen and (min-width: 1920px) {
+	.course__price {
+		font-size: 36px;
 	}
 }
 .course__btn-wrapper {
@@ -752,6 +802,11 @@ main {
 }
 .course__item:nth-child(even) .course__btn {
 	background-color: #4d8bf4;
+}
+@media (min-width: 1920px) {
+	.course__btn {
+		padding: 17px 55px;
+	}
 }
 /* End of Prices page */
 
