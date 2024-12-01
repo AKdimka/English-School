@@ -256,15 +256,31 @@ main {
 .prices-list {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
 	gap: 30px;
 }
-/* @media screen and (min-width: 1920px) {
-	.prices-list{
+@media screen and (min-width: 1920px) {
+	.prices-list {
 		gap: 99px;
 	}
-} */
-
+}
+.price {
+}
+.price:nth-child(odd) {
+	background-color: #fff1f7;
+}
+.price:nth-child(even) {
+	background-color: #e5f0ff;
+}
+@media (min-width: 768px) {
+	.price {
+		width: calc((100% - 30px) / 2);
+	}
+}
+@media (min-width: 1920px) {
+	.price {
+		width: calc((100% - (2 * 99px)) / 3);
+	}
+}
 .price .price__btn-wrapper {
 	margin-top: 30px;
 	margin-left: auto;
