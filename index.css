@@ -103,6 +103,9 @@ main {
 		margin-bottom: 50px;
 	}
 }
+
+/* HERO section */
+
 /* .hero__title {
 	font-weight: 750;
 	font-size: 25px;
@@ -110,6 +113,10 @@ main {
 
 	color: #9E1651;
 } */
+
+/* _____ End of HERO section _____ */
+
+/* About section */
 @media screen and (min-width: 768px) {
 	.about {
 		display: flex;
@@ -184,14 +191,19 @@ main {
 		width: 700px;
 	}
 }
+/* _____ End of about section _____ */
 
+/* Teachers section */
 .teachers {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
 	gap: 30px;
 }
-
+@media (min-width: 1920px) {
+	.teachers {
+		gap: 65px;
+	}
+}
 .teacher {
 	width: 290px;
 	display: flex;
@@ -205,14 +217,14 @@ main {
 }
 @media screen and (min-width: 768px) {
 	.teacher {
-		width: 340px;
+		width: calc((100% - 30px) / 2);
 		padding-top: 50px;
 		padding-bottom: 80px;
 	}
 }
 @media screen and (min-width: 1920px) {
 	.teacher {
-		width: 490px;
+		width: calc((100% - (2 * 65px)) / 3);
 	}
 }
 
