@@ -55,7 +55,7 @@
 		<section class="section">
 			<h1 class="section__title">Блог</h1>
 			
-			<div class="container">
+			<div class="container flex">
 				<ul class="posts-list">
 					<li class="post">
 						<img class="post__img" src="img/blog_1.jpg" alt="Британский флаг на фоне неба" loading="lazy">
@@ -69,58 +69,62 @@
 					</li>
 				</ul>
 				
-				<div class="search-box">
-					<h2 class="mini-title">Поиск</h2>
-					<input type="text">
+				<div class="blog-right">
+						<div class="search-box">
+							<h2 class="mini-title">Поиск</h2>
+							<input class="search-input" type="text">
+						</div>
+						
+						<div class="popular-articles">
+							<h2 class="mini-title">Популярные статьи</h2>
+							<ul class="popular__list">
+								<li class="popular__item">
+									<div class="popular__img-wrapper">
+										<img class="popular__img" src="img/blog_2.jpg" alt="" loading="lazy">
+									</div>
+						
+									<div class="popular__info-wrapper">
+										<p class="popular__date">01.04.21</p>
+										<p class="popular__text">Lorem #1 ipsum dolor sit amet, consectetur adipiscing elit ...</p>
+									</div>
+								</li>
+								<li class="popular__item">
+									<div class="popular__img-wrapper">
+										<img class="popular__img" src="img/blog_3.jpg" alt="" loading="lazy">
+									</div>
+						
+									<div class="popular__info-wrapper">
+										<p class="popular__date">01.04.21</p>
+										<p class="popular__text">Lorem #2 ipsum dolor sit amet, consectetur adipiscing elit ...</p>
+									</div>
+								</li>
+								<li class="popular__item">
+													<div class="popular__img-wrapper">
+														<img class="popular__img" src="img/blog_1.jpg" alt="" loading="lazy">
+													</div>
+												
+													<div class="popular__info-wrapper">
+														<p class="popular__date">01.04.21</p>
+														<p class="popular__text">Lorem #3 ipsum dolor sit amet, consectetur adipiscing elit ...</p>
+													</div>
+												</li>
+												<li class="popular__item">
+													<div class="popular__img-wrapper">
+														<img class="popular__img" src="img/blog_2.jpg" alt="" loading="lazy">
+													</div>
+												
+													<div class="popular__info-wrapper">
+														<p class="popular__date">01.04.21</p>
+														<p class="popular__text">Lorem #4 ipsum dolor sit amet, consectetur adipiscing elit ...</p>
+													</div>
+												</li>
+							</ul>
+							<button class="btn--look-all" type="button">СМОТРЕТЬ ВСЕ СТАТЬИ</button>
+						</div>
+						</div>
 				</div>
 
-				<div class="popular-articles">
-					<h2 class="mini-title">Популярные статьи</h2>
-					<ul class="popular__list">
-						<li class="popular__item">
-							<div class="popular__img-wrapper">
-								<img class="popular__img" src="img/blog_2.jpg" alt="" loading="lazy">
-							</div>
-							
-							<div class="popular__info-wrapper">
-								<p class="popular__date">01.04.21</p>
-								<p class="popular__text">Lorem #1 ipsum dolor sit amet, consectetur adipiscing elit ...</p>
-							</div>
-						</li>
-						<li class="popular__item">
-							<div class="popular__img-wrapper">
-								<img class="popular__img" src="img/blog_3.jpg" alt="" loading="lazy">
-							</div>
-						
-							<div class="popular__info-wrapper">
-								<p class="popular__date">01.04.21</p>
-								<p class="popular__text">Lorem #2 ipsum dolor sit amet, consectetur adipiscing elit ...</p>
-							</div>
-						</li>
-						<li class="popular__item">
-							<div class="popular__img-wrapper">
-								<img class="popular__img" src="img/blog_1.jpg" alt="" loading="lazy">
-							</div>
-						
-							<div class="popular__info-wrapper">
-								<p class="popular__date">01.04.21</p>
-								<p class="popular__text">Lorem #3 ipsum dolor sit amet, consectetur adipiscing elit ...</p>
-							</div>
-						</li>
-						<li class="popular__item">
-							<div class="popular__img-wrapper">
-								<img class="popular__img" src="img/blog_2.jpg" alt="" loading="lazy">
-							</div>
-						
-							<div class="popular__info-wrapper">
-								<p class="popular__date">01.04.21</p>
-								<p class="popular__text">Lorem #4 ipsum dolor sit amet, consectetur adipiscing elit ...</p>
-							</div>
-						</li>
-					</ul>
-					<button type="button">СМОТРЕТЬ ВСЕ СТАТЬИ</button>
-				</div>
-			</div>
+			
 		</section>
 	</main>
 
