@@ -62,7 +62,7 @@ main {
 }
 @media screen and (min-width: 1920px) {
 	.container {
-		max-width: 1600px;
+		max-width: 1650px;
 	}
 }
 
@@ -282,7 +282,7 @@ main {
 	.flex {
 		display: flex;
 		flex-direction: row;
-		gap: 30px;
+		justify-content: space-between;
 	}
 }
 .posts-list {
@@ -291,6 +291,13 @@ main {
 @media (min-width: 768px) {
 	.posts-list {
 		width: 500px;
+
+		margin-bottom: 0;
+	}
+}
+@media (min-width: 1920px) {
+	.posts-list {
+		width: 1220px;
 
 		margin-bottom: 0;
 	}
@@ -348,7 +355,12 @@ main {
 }
 @media (min-width: 768px) {
 	.blog-right {
-		width: calc(100% - 500px - 30px);
+		width: calc(100% - (500px + 30px));
+	}
+}
+@media (min-width: 1920px) {
+	.blog-right {
+		width: calc(100% - (1220px + 85px));
 	}
 }
 .search-box {
@@ -360,11 +372,16 @@ main {
 		margin-bottom: 15px;
 	}
 }
-.mini-title {
+.search-title {
 	font-size: 20px;
 	margin-bottom: 10px;
 }
-.search-post {
+@media (min-width: 1920px) {
+	.search-title {
+		font-size: 30px;
+	}
+}
+.search-input {
 }
 @media (min-width: 768px) {
 	.search-input {
@@ -384,10 +401,24 @@ main {
 }
 .popular-articles {
 }
+.popular-title {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+@media (min-width: 1920px) {
+	.popular-title {
+		font-size: 24px;
+	}
+}
 .popular__list {
 	margin-bottom: 10px;
 }
 .popular__item {
+}
+@media (min-width: 1920px) {
+	.popular__item {
+		display: flex;
+	}
 }
 .popular__item:not(:last-child) {
 	margin-bottom: 5px;
@@ -406,8 +437,6 @@ main {
 		margin-bottom: 5px;
 	}
 }
-/* @media (min-width: 768px) {
-} */
 .popular__img {
 }
 @media (min-width: 768px) {
