@@ -22,11 +22,9 @@
 	<div class="container">
 		<header class="header">
 			<nav class="header__nav">
-				<!-- 		<a class="header__logo" href="">
-								<svg>
-									<use href="img/header_logo.svg"></use>
-								</svg>
-							</a> -->
+				<a class="header__logo" href="#">
+					<img src="img/header-logo.png" alt="">
+				</a>
 				<ul class="nav__list">
 					<li class="nav__item">
 						<a href="index.html">Home</a>
@@ -54,22 +52,23 @@
 	<main>
 		<section class="section">
 			<div class="container">
-
+  
 				<h1 class="section__title">Отзывы</h1>
 				<h2>Оставить отзыв</h2>
 				<div>
 					<form action="">
 						<label for="username">Ваше имя</label>
-						<input type="text" id="username">
+						<input type="text" id="username" placeholder="lorem">
 						<label for="useremail">Ваш email</label>
-						<input type="email" id="useremail">
-						<button class="btn--blue" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
-					</form>
-				</div>
-				<div class="input-review">
-					<input type="text">
-				</div>
+						<input type="email" id="useremail" placeholder="lorem@mail.com">
+						<button class="btn--blue mobile" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
 
+						<div class="input-review">
+							<label for="user-review-input">Напишите ваш отзыв</label>
+							<input id="user-review-input" type="text" placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries">
+						</div>
+						<button class="btn--blue modile-plus" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+					</form>
 			</div>
 		</section>
 	

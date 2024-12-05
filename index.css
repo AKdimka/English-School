@@ -131,7 +131,18 @@ main {
 		border-radius: 15px;
 	}
 }
-
+.mobile {
+}
+@media (min-width: 768px) {
+	.mobile {
+		display: none;
+	}
+}
+@media (max-width: 767px) {
+	.mobile {
+		display: none;
+	}
+}
 /* HERO section */
 
 /* .hero__title {
@@ -452,6 +463,9 @@ main {
 .review-bg-mb {
 	background-color: #f0f6ff;
 	margin-bottom: 10px;
+}
+.review-bg-mb:last-child {
+	margin-bottom: 0;
 }
 @media (min-width: 768px) {
 	.review-bg-mb {
