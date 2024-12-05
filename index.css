@@ -104,6 +104,34 @@ main {
 	}
 }
 
+.btn--blue {
+	cursor: pointer;
+	width: 100%;
+	padding: 10px;
+
+	border: 1px solid #84aff9;
+	border-radius: 13px;
+	color: #ffffff;
+	background-color: #84aff9;
+
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn--blue:hover {
+	transform: translateY(10px) translateX(10px);
+}
+@media (min-width: 768px) {
+	.btn--blue {
+		font-size: 12px;
+		border-radius: 10px;
+	}
+}
+@media (min-width: 1920) {
+	.btn--blue {
+		font-size: 20px;
+		border-radius: 15px;
+	}
+}
+
 /* HERO section */
 
 /* .hero__title {
@@ -397,11 +425,44 @@ main {
 }
 .reviews__list {
 }
-.user {
+.review {
 	padding: 10px 20px;
 
 	border-radius: 8px;
 	background: #ffffff;
+}
+@media (min-width: 768px) {
+	.review {
+		padding: 20px 50px 25px 35px;
+
+		border-radius: 15px;
+	}
+}
+@media (min-width: 1920px) {
+	.review {
+		width: 1080px;
+
+		padding: 45px 115px 55px 75px;
+		margin-left: auto;
+		margin-right: auto;
+
+		border-radius: 25px;
+	}
+}
+.review-bg-mb {
+	background-color: #f0f6ff;
+	margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+	.review-bg-mb {
+		background-color: #f0f6ff;
+		margin-bottom: 15px;
+	}
+}
+@media (min-width: 1920px) {
+	.review-bg-mb {
+		margin-bottom: 25px;
+	}
 }
 .user__info {
 	display: flex;
@@ -409,6 +470,11 @@ main {
 	align-items: center;
 
 	margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+	.user__info {
+		margin-bottom: 0;
+	}
 }
 .user__photo {
 	height: 100%;
@@ -419,6 +485,20 @@ main {
 	border-radius: 50%;
 	overflow: hidden;
 }
+@media (min-width: 768px) {
+	.user__photo {
+		width: 100px;
+
+		margin-right: 15px;
+	}
+}
+@media (min-width: 1920px) {
+	.user__photo {
+		width: 135px;
+
+		margin-right: 35px;
+	}
+}
 .user__text-info {
 	display: flex;
 	flex-direction: column;
@@ -427,12 +507,51 @@ main {
 .user__name {
 	font-size: 18px;
 	font-weight: 700;
+
+	margin-bottom: 5px;
+}
+@media (min-width: 768px) {
+	.user__name {
+		font-size: 20px;
+	}
+}
+@media (min-width: 1920px) {
+	.user__name {
+		font-size: 25px;
+
+		margin-bottom: 10px;
+	}
 }
 .user__status {
 	font-size: 18px;
 	font-weight: 400;
 }
-.user__text {
+@media (min-width: 768px) {
+	.user__status {
+		font-size: 20px;
+	}
+}
+@media (min-width: 1920px) {
+	.user__status {
+		font-size: 25px;
+	}
+}
+.user__review-text {
+	font-size: 18px;
+}
+@media (min-width: 768px) {
+	.user__review-text {
+		font-size: 20px;
+
+		padding-left: 115px;
+	}
+}
+@media (min-width: 1920px) {
+	.user__review-text {
+		font-size: 25px;
+
+		padding-left: 170px;
+	}
 }
 /* _____ End of reviews section _____ */
 
