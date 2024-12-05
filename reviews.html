@@ -54,26 +54,31 @@
 			<div class="container">
   
 				<h1 class="section__title">Отзывы</h1>
-				<h2>Оставить отзыв</h2>
-				<div>
-					<form action="">
-						<label for="username">Ваше имя</label>
-						<input type="text" id="username" placeholder="lorem">
-						<label for="useremail">Ваш email</label>
-						<input type="email" id="useremail" placeholder="lorem@mail.com">
-						<button class="btn--blue mobile" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+				<h2 class="form-title">Оставить отзыв</h2>
+
+					<form class="review-form" action="">
+						<label class="review-label">
+							Ваше имя
+							<input class="review-input" type="text" name="username" placeholder="lorem">
+						</label>
+						
+						<label class="review-label">
+							Ваш email
+							<input class="review-input" type="email" name="useremail" placeholder="lorem@mail.com">
+						</label>
+						
+						<button class="btn--blue tablet" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
 
 						<div class="input-review">
-							<label for="user-review-input">Напишите ваш отзыв</label>
-							<input id="user-review-input" type="text" placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries">
+							<label class="review-label">
+								Напишите ваш отзыв
+								<textarea class="review-input text-area" name="user-review-input" placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"></textarea>
+							</label>
 						</div>
-						<button class="btn--blue modile-plus" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+						<button class="btn--blue mobile-olnly" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
 					</form>
-			</div>
 		</section>
 	
-
-
 		<section class="section">
 				<div class="container">
 					<h2 class="section__title">Все отзывы</h2>
