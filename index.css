@@ -27,19 +27,6 @@ a:visited {
 main {
 	background: #ffffff;
 }
-
-.header {
-}
-.header__nav {
-}
-.header__logo {
-}
-.nav__list {
-	display: flex;
-	justify-content: space-between;
-}
-.nav__item {
-}
 .container {
 	margin-left: auto;
 	margin-right: auto;
@@ -103,7 +90,31 @@ main {
 		margin-bottom: 50px;
 	}
 }
+.transparent-btn {
+	cursor: pointer;
+	font-weight: 700;
+	font-size: 20px;
+	padding: 15px 20px;
+	border: 1px solid #3886fe;
+	border-radius: 13px;
+	color: #3886fe;
+	background-color: transparent;
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.transparent-btn:hover,
+.transparent-btn:focus {
+	outline: none;
+	color: #f0f6ff;
+	background-color: #3886fe;
+}
+@media screen and (min-width: 1920px) {
+	.transparent-btn {
+		font-size: 27px;
 
+		padding: 9px 20px 12px;
+		margin-left: auto;
+	}
+}
 .btn--blue {
 	cursor: pointer;
 	width: 100%;
@@ -152,6 +163,69 @@ main {
 	width: 100%;
 }
 
+/* Header sart */
+.header {
+	padding-top: 20px;
+}
+.header__nav {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+.header__logo-link {
+}
+
+.header__logo-img {
+	display: inline-block;
+	width: 150px;
+}
+@media (min-width: 1920px) {
+	.header__logo-img {
+		width: 300px;
+	}
+}
+.nav__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	gap: 33px;
+}
+@media (min-width: 1920px) {
+	.nav__list {
+		font-size: 27px;
+		gap: 130px;
+	}
+}
+.nav__item {
+	display: inline-block;
+}
+.header-nav__link {
+	color: #2c2c2c;
+}
+.header-nav__link:visited {
+	color: #2c2c2c;
+}
+.header-nav__link:hover,
+.header-nav__link:focus {
+	color: #3886fe;
+}
+/* @media (min-width: 1920px) {
+	.header-nav__link {
+		font-size: 27px;
+	}
+} */
+.header__btn {
+	display: inline-block;
+	font-size: 16px;
+}
+@media (min-width: 1920px) {
+	.header__btn {
+		font-size: 27px;
+
+		padding: 10px 20px 15px;
+	}
+}
 /* HERO section */
 .hero {
 }
@@ -449,6 +523,25 @@ main {
 	justify-content: center;
 	gap: 20px;
 	margin-top: 10px;
+
+	fill: #e0e0e0;
+}
+.teacher__socials-item {
+}
+.teacher__socials-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 34px;
+	height: 34px;
+
+	border-radius: 50%;
+}
+.teacher__socials-link:hover,
+.teacher__socials-link:focus {
+	fill: #ffffff;
+	background-color: #3886fe;
 }
 
 /* Prices page */
@@ -1179,30 +1272,13 @@ main {
 	outline: none;
 	color: #3886fe;
 }
+
 .footer__btn {
-	cursor: pointer;
 	min-width: 100%;
-	font-weight: 700;
-	font-size: 20px;
-	padding: 15px 20px;
-	border: 1px solid #3886fe;
-	border-radius: 13px;
-	color: #3886fe;
-	background-color: transparent;
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer__btn:hover,
-.footer__btn:focus {
-	outline: none;
-	color: #f0f6ff;
-	background-color: #3886fe;
 }
 @media screen and (min-width: 1920px) {
 	.footer__btn {
-		font-size: 27px;
-
 		min-width: 292px;
-		padding: 9px 20px 12px;
 		margin-left: auto;
 	}
 }
