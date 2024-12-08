@@ -163,6 +163,11 @@ main {
 		gap: 20px;
 	}
 }
+@media (min-width: 1920px) {
+	.hero {
+		gap: 55px;
+	}
+}
 .hero-left {
 	margin-bottom: 15px;
 }
@@ -195,6 +200,16 @@ main {
 .hero__text {
 	color: #000000;
 }
+@media (min-width: 768px) {
+	.hero__text {
+		font-size: 24px;
+	}
+}
+@media (min-width: 1920px) {
+	.hero__text {
+		font-size: 36px;
+	}
+}
 .hero-form {
 }
 @media (min-width: 768px) {
@@ -204,7 +219,14 @@ main {
 		border-radius: 20px;
 
 		box-shadow: 9px 4px 26px 5px rgba(0, 0, 0, 0.04);
-		background-color: #fff1f7; /* temporary color */
+		background-color: #e6f0ff; /* temporary color */
+	}
+}
+@media (min-width: 1920px) {
+	.hero-form {
+		padding: 50px 50px 80px;
+
+		border-radius: 30px;
 	}
 }
 .hero__form-label {
@@ -214,6 +236,14 @@ main {
 	.hero__form-label {
 		display: flex;
 		flex-direction: column;
+	}
+}
+@media screen and (min-width: 1920px) {
+	.hero__form-label {
+		font-size: 24px;
+	}
+	.hero__form-label:not(:first-child) {
+		margin-top: 20px;
 	}
 }
 .hero__input {
@@ -230,6 +260,18 @@ main {
 @media (min-width: 768px) {
 	.hero__input {
 		width: 300px;
+
+		margin-top: 10px;
+	}
+}
+@media (min-width: 1920px) {
+	.hero__input {
+		width: 655px;
+
+		font-size: 24px;
+
+		padding: 30px 35px;
+		margin-top: 15px;
 	}
 }
 .hero__btn-submit {
@@ -237,12 +279,27 @@ main {
 
 	margin-top: 7px;
 }
+
+@media (min-width: 1920px) {
+	.hero__btn-submit {
+		font-size: 24px;
+
+		margin-top: 40px;
+		padding: 33px 28px;
+	}
+}
 .fogot-pass {
+	display: inline-block;
 	font-size: 12px;
-	text-align: center;
 
 	margin-top: 5px;
+
 	color: #636363;
+}
+@media (min-width: 1920px) {
+	.fogot-pass {
+		margin-top: 15px;
+	}
 }
 /* _____ End of HERO section _____ */
 
